@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_js/flutter_js.dart';
@@ -41,7 +39,7 @@ class _JSConfigState extends State<JSConfig> {
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Tutorial Spot - JS / Flutter"),
+          title: const Text("JS with Flutter"),
         ),
         body: Center(
           child: Column(
@@ -52,11 +50,9 @@ class _JSConfigState extends State<JSConfig> {
                 child: TextField(
                   controller: _num1Controller,
                   decoration: InputDecoration(
-                    label: Text("Num1"),
-                    hintText: "Enter first number",
-                    border: OutlineInputBorder(
-
-                    )
+                      label: Text("Num1"),
+                      hintText: "Enter first number",
+                      border: OutlineInputBorder()
                   ),
                 ),
               ),
@@ -65,11 +61,9 @@ class _JSConfigState extends State<JSConfig> {
                 child: TextField(
                   controller: _num2Controller,
                   decoration: InputDecoration(
-                    label: Text("Num2"),
-                    hintText: "Enter second number",
-                      border: OutlineInputBorder(
-
-                      )
+                      label: Text("Num2"),
+                      hintText: "Enter second number",
+                      border: OutlineInputBorder()
                   ),
 
                 ),
